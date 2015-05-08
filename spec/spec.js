@@ -23,16 +23,16 @@ describe("grade Check", function(){
 	});		
 //***
 //median
-	it("if array is [1,2,3,4,5] should return 3", function(){
+	it("if array is [4,5,7,3,9,1,3] should return 3", function(){
 		expect(grades.medianScore([4,5,7,3,9,1,3])).toEqual(4)
 	})
 	it("if array is [1,2,3,4,5,6,7,8,9,10] should return 5.5", function(){
 		expect(grades.medianScore([1,2,3,4,5,6,7,8,9,10])).toEqual(5.5)
 	})
-
+//****
 //mode
-	it("if array is [1,1,1,1,2,2,2,4,5,6,7] should return 3", function(){
-		expect(grades.medianScore([1,1,1,1,2,2,2,4,5,6,7])).toEqual(1)
+	it("if array is 1,1,5,5,1,2,3,5,5,5,4,3,5 should return 5", function(){
+		expect(grades.modeScore([1,1,5,5,1,2,3,5,5,5,4,3,5])).toEqual(5)
 	})
 
 });
